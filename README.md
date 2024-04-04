@@ -20,8 +20,14 @@ Destination directory should exist if specified.
 
 ### Examples:
 ```
-PreCompress.exe -i C:\temp\source\*.dll -d c:\temp\destination
-PreCompress.exe -i C:\temp\source
-PreCompress.exe -i source\file.dll
-PreCompress.exe -i *.dll
+PreCompress -i C:\temp\source\*.dll -d c:\temp\destination
+PreCompress -i C:\temp\source
+PreCompress -i source\file.dll
+PreCompress -i *.dll
 ```
+
+## Installation
+The tool is available as a dotnet global tool. To install it follow the instructions on nuget:
+https://www.nuget.org/packages/zorgoz.PreCompress/
+
+`dotnet tool install --global zorgoz.PreCompress`
