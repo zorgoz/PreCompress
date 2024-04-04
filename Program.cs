@@ -49,8 +49,8 @@ var fileOption = new Option<FileInfo[]?>(
 
 fileOption.AddAlias("--input");
 
-var bratliOption = new Option<bool>(name: "-nb", description: "Omit Bratli compressed version.", getDefaultValue: () => false);
-bratliOption.AddAlias("--NoBratli");
+var bratliOption = new Option<bool>(name: "-nb", description: "Omit Brotli compressed version.", getDefaultValue: () => false);
+bratliOption.AddAlias("--NoBrotli");
 
 var gzipOption = new Option<bool>(name: "-ng", description: "Omit GZip compressed version.", getDefaultValue: () => false);
 gzipOption.AddAlias("--NoGzip");
