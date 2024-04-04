@@ -14,6 +14,12 @@
     <Description>Tool to be used to created precompressed content to be served by Kestler.
 Created to work around wrong compressed content during publish.</Description>
     <Copyright>MIT</Copyright>
+    <RepositoryUrl>https://github.com/zorgoz/PreCompress</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/zorgoz/PreCompress</PackageProjectUrl>
+    <PackAsTool>True</PackAsTool>
+    <PackageTags>brotli, gzip, http compression, asp.net core, kestler </PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <EnableNETAnalyzers>False</EnableNETAnalyzers>
   </PropertyGroup>
 
   <ItemGroup>
