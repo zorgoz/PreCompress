@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -17,10 +17,11 @@ Created to work around wrong compressed content during publish.</Description>
     <RepositoryUrl>https://github.com/zorgoz/PreCompress</RepositoryUrl>
     <PackageProjectUrl>https://github.com/zorgoz/PreCompress</PackageProjectUrl>
     <PackAsTool>True</PackAsTool>
+    <ToolCommandName>precompress</ToolCommandName>
     <PackageTags>brotli, gzip, http compression, asp.net core, kestler </PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <EnableNETAnalyzers>False</EnableNETAnalyzers>
-    <Version>0.9.2</Version>
+    <Version>0.9.3</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>zorgoz.$(AssemblyName)</PackageId>
   </PropertyGroup>
@@ -30,7 +31,7 @@ Created to work around wrong compressed content during publish.</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="README.md">
+    <None Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
