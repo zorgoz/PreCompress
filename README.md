@@ -50,7 +50,7 @@ dotnet tool install zorgoz.PreCompress
 After installing as tool, you can add this to you `.csproj` file as a post-publish step.
 ```
 <Target Name="PreCompress" AfterTargets="Publish">
-	<Exec Command="dotnet tool run precompress -i $(PublishDir)wwwroot\_framework\ -p \.(dll|js|json|wasm|blat)$"></Exec>
+	<Exec Command="dotnet tool run precompress -i $(PublishDir)wwwroot\_framework\ -p &quot;\.(dll|js|json|wasm|blat)$&quot;"></Exec>
 </Target>
 ```
 
