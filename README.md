@@ -23,7 +23,7 @@ Destination directory should exist if specified.
 ```
 PreCompress -i C:\temp\source\*.dll -d c:\temp\destination
 PreCompress -i C:\temp\source\*.dll -i C:\temp\source\*.json
-PreCompress -i C:\temp\source\ -p \.(dll|js.*)$
+PreCompress -i C:\temp\source\ -p "\.(dll|js.*)$"
 PreCompress -i source\file.dll
 PreCompress -i *.dll
 ```
