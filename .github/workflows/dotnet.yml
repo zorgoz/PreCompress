@@ -25,11 +25,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Publish NuGet
-      env:
-        KEY: ${{ secrets.key }}
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: PreCompress.csproj
         PACKAGE_NAME: zorgoz.PreCompress
-        NUGET_KEY: $KEY
+        NUGET_KEY: ${{ secrets.key }}
         
