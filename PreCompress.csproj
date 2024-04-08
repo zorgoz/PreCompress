@@ -11,8 +11,7 @@
     <Title>Precompressor for ASP.NET Core</Title>
     <Authors>zorgoz</Authors>
     <Company>zorgoz</Company>
-    <Description>Tool to be used to created precompressed content to be served by Kestler.
-Created to work around wrong compressed content during publish.</Description>
+    <Description>Tool to be used to created precompressed content to be served by Kestler. Created to work around wrong compressed content during publish.</Description>
     <Copyright>MIT</Copyright>
     <RepositoryUrl>https://github.com/zorgoz/PreCompress</RepositoryUrl>
     <PackageProjectUrl>https://github.com/zorgoz/PreCompress</PackageProjectUrl>
@@ -21,7 +20,7 @@ Created to work around wrong compressed content during publish.</Description>
     <PackageTags>brotli, gzip, http compression, asp.net core, kestler </PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <EnableNETAnalyzers>False</EnableNETAnalyzers>
-    <Version>0.9.3</Version>
+    <Version>0.9.5</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>zorgoz.$(AssemblyName)</PackageId>
   </PropertyGroup>
