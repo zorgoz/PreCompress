@@ -27,4 +27,4 @@ jobs:
     - name: pwd
       run: pwd
     - name: Publish
-      run: dotnet nuget push *.nupkg -k ${{ secrets.key }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./bin/Debug/*.nupkg -k ${{ secrets.key }} -s https://api.nuget.org/v3/index.json
