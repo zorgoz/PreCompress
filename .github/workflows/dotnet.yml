@@ -19,12 +19,12 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Package
-      run: dotnet pack -c Release -o . PreCompress/PreCompress.csproj
+    - name: pwd
+      run: pwd
     - name: Publish
       run: dotnet nuget push *.nupkg -k ${{ secrets.key }} -s https://api.nuget.org/v3/index.json
