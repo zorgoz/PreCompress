@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "ReCompress": {
-      "commandName": "Project",
-      "commandLineArgs": "-i D:\\Users\\zolta\\source\\repos\\bmw\\WagoDaliControlPanel\\bin\\Debug\\net8.0\\*.dll -i *.json",
-      "workingDirectory": "C:\\Users\\zolta\\source\\repos\\bmw\\WagoDaliControlPanel\\bin\\Debug\\net8.0"
-    }
-  }
-}
