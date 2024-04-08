@@ -24,10 +24,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.5
-      with:
-        PROJECT_FILE_PATH: PreCompress.csproj
-        PACKAGE_NAME: zorgoz.PreCompress
-        NUGET_KEY: ${{ secrets.key }}
-        
+    - name: Package
+      run: dotnet pack -c Release -o . PreCompress.csproj
+    - name: Publish
+      run: dotnet nuget push *.nupkg -k ${{ secrets.key }} -s https://api.nuget.org/v3/index.json
