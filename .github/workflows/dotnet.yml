@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Package
-      run: dotnet pack -c Release -o . PreCompress.csproj
+      run: dotnet pack -c Release -o . PreCompress/PreCompress.csproj
     - name: Publish
       run: dotnet nuget push *.nupkg -k ${{ secrets.key }} -s https://api.nuget.org/v3/index.json
